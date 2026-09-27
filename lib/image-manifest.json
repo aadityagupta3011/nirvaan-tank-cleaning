@@ -1,0 +1,112 @@
+{
+  "logo": {
+    "src": "/images/logo.webp",
+    "width": 256,
+    "height": 161
+  },
+  "tank-cleaning-before-after": {
+    "src": "/images/tank-cleaning-before-after.webp",
+    "width": 1200,
+    "height": 897
+  },
+  "unsafe-tank-water": {
+    "src": "/images/unsafe-tank-water.webp",
+    "width": 640,
+    "height": 640
+  },
+  "contaminated-water-illness": {
+    "src": "/images/contaminated-water-illness.webp",
+    "width": 640,
+    "height": 640
+  },
+  "booking-tank-cleaning": {
+    "src": "/images/booking-tank-cleaning.webp",
+    "width": 640,
+    "height": 640
+  },
+  "nirvaan-cleaning-water-tank": {
+    "src": "/images/nirvaan-cleaning-water-tank.webp",
+    "width": 640,
+    "height": 640
+  },
+  "mechanised-dewatering": {
+    "src": "/images/mechanised-dewatering.webp",
+    "width": 480,
+    "height": 358
+  },
+  "sludge-removal": {
+    "src": "/images/sludge-removal.webp",
+    "width": 480,
+    "height": 480
+  },
+  "high-pressure-jet-cleaning": {
+    "src": "/images/high-pressure-jet-cleaning.webp",
+    "width": 480,
+    "height": 320
+  },
+  "vacuum-cleaning": {
+    "src": "/images/vacuum-cleaning.webp",
+    "width": 480,
+    "height": 337
+  },
+  "anti-bacterial-spray": {
+    "src": "/images/anti-bacterial-spray.webp",
+    "width": 480,
+    "height": 320
+  },
+  "uv-tank-disinfection": {
+    "src": "/images/uv-tank-disinfection.webp",
+    "width": 480,
+    "height": 480
+  },
+  "nirvaan-team-tank-cleaning": {
+    "src": "/images/nirvaan-team-tank-cleaning.webp",
+    "width": 1200,
+    "height": 1200
+  },
+  "commercial-water-tank-cleaning": {
+    "src": "/images/commercial-water-tank-cleaning.webp",
+    "width": 780,
+    "height": 822
+  },
+  "apartment-society-tank-cleaning": {
+    "src": "/images/apartment-society-tank-cleaning.webp",
+    "width": 626,
+    "height": 425
+  },
+  "book-tank-cleaning": {
+    "src": "/images/book-tank-cleaning.webp",
+    "width": 500,
+    "height": 500
+  },
+  "nirvaan-tank-cleaning-deal": {
+    "src": "/images/nirvaan-tank-cleaning-deal.webp",
+    "width": 640,
+    "height": 640
+  },
+  "happy-customer-clean-tank": {
+    "src": "/images/happy-customer-clean-tank.webp",
+    "width": 640,
+    "height": 640
+  },
+  "safe-clean-water": {
+    "src": "/images/safe-clean-water.webp",
+    "width": 640,
+    "height": 640
+  },
+  "technician-cleaning-overhead-tank": {
+    "src": "/images/technician-cleaning-overhead-tank.webp",
+    "width": 600,
+    "height": 600
+  },
+  "water-storage-tanks": {
+    "src": "/images/water-storage-tanks.webp",
+    "width": 600,
+    "height": 600
+  },
+  "independent-house-tank-service": {
+    "src": "/images/independent-house-tank-service.webp",
+    "width": 1400,
+    "height": 933
+  }
+}

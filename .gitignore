@@ -67,3 +67,9 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+dist/
