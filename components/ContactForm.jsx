@@ -83,6 +83,7 @@ const ContactForm = () => {
 
     try {
       await sendBooking(templateParams);
+      console.log("Email Successfully sent");
 
       setFormData(initialFormState);
       setSubmitState("success");
