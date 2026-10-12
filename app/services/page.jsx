@@ -4,6 +4,7 @@ import SiteImage from "@/components/SiteImage";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import SectionHead from "@/components/SectionHead";
+import VideoGallery from "@/components/VideoGallery";
 import { SITE, SERVICES, PROCESS_STEPS, FAQS, inCity } from "@/lib/site";
 import { pageMetadata, breadcrumbSchema, servicesSchema, faqSchema } from "@/lib/seo";
 
@@ -93,8 +94,18 @@ const Services = () => {
         </div>
       </section>
 
+      {/* On-site videos */}
+      <section className="section-wrap py-20 sm:py-28">
+        <SectionHead n="" label="See us at work" title="Watch the process on real tanks">
+          Footage from our jobs showing the mechanised steps above in action.
+        </SectionHead>
+        <div className="mt-14">
+          <VideoGallery />
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="section-wrap grid gap-12 py-20 sm:py-28 lg:grid-cols-12">
+      <section className="section-wrap grid gap-12 border-t border-ink/10 py-20 sm:py-28 lg:grid-cols-12">
         <div className="lg:col-span-4">
           <p className="label">FAQ</p>
           <h2 className="section-heading mt-5">Frequently asked questions about tank cleaning</h2>

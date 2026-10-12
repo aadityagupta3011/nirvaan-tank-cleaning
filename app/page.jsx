@@ -13,9 +13,11 @@ import SiteImage from "@/components/SiteImage";
 import StatsCounter from "@/components/StatsCounter";
 import VerticalMarquee from "@/components/VerticalMarquee";
 import StoryCarousel from "@/components/StoryCarousel";
+import VideoGallery from "@/components/VideoGallery";
+import JsonLd from "@/components/JsonLd";
 import SectionHead from "@/components/SectionHead";
-import { SITE, SERVICES, PROCESS_STEPS, inCity } from "@/lib/site";
-import { pageMetadata } from "@/lib/seo";
+import { SITE, SERVICES, PROCESS_STEPS, VIDEOS, inCity } from "@/lib/site";
+import { pageMetadata, videoSchema } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: { absolute: `Water Tank Cleaning Services${inCity} | ${SITE.name}` },
@@ -101,6 +103,9 @@ const riskGroups = [
 const Home = () => {
   return (
     <div className="page-shell">
+      {videoSchema(VIDEOS).map((schema) => (
+        <JsonLd key={schema.contentUrl} data={schema} />
+      ))}
       {/* ---------- Hero ---------- */}
       <section className="border-b border-ink/10">
         <div className="section-wrap grid gap-12 py-12 sm:py-16 lg:grid-cols-12 lg:gap-10 lg:py-20">
@@ -225,10 +230,21 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ---------- 03 Story (vertical carousel) ---------- */}
+      {/* ---------- 03 On-site videos ---------- */}
+      <section id="see-us-at-work" className="section-wrap scroll-mt-32 py-20 sm:py-28">
+        <SectionHead n="03" label="See us at work" title="Real tanks, real cleaning">
+          Clips from our jobs — from rooftop inspection to jet cleaning,
+          sludge removal and disinfection. Tap the speaker icon for sound.
+        </SectionHead>
+        <div className="mt-14">
+          <VideoGallery />
+        </div>
+      </section>
+
+      {/* ---------- 04 Story (vertical carousel) ---------- */}
       <section className="bg-paper-2 py-20 sm:py-28">
         <div className="section-wrap">
-          <SectionHead n="03" label="Why cleaning matters" title="From dirty tank to safe water">
+          <SectionHead n="04" label="Why cleaning matters" title="From dirty tank to safe water">
             How a dirty tank affects daily life — and how professional cleaning
             solves the problem.
           </SectionHead>
@@ -238,9 +254,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ---------- 04 Why Nirvaan ---------- */}
+      {/* ---------- 05 Why Nirvaan ---------- */}
       <section className="section-wrap py-20 sm:py-28">
-        <SectionHead n="04" label="Why Nirvaan" title="Your trusted hygiene partner">
+        <SectionHead n="05" label="Why Nirvaan" title="Your trusted hygiene partner">
           We focus on hygienic cleaning, clear service steps, and a simple
           booking process customers can trust.
         </SectionHead>
@@ -256,11 +272,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ---------- 05 Health ---------- */}
+      {/* ---------- 06 Health ---------- */}
       <section className="border-t border-ink/10 bg-white py-20 sm:py-28">
         <div className="section-wrap grid gap-12 lg:grid-cols-12">
           <div className="lg:sticky lg:top-32 lg:col-span-4 lg:self-start">
-            <p className="label">05 — Health awareness</p>
+            <p className="label">06 — Health awareness</p>
             <h2 className="section-heading mt-5">How dirty water affects your ENT health</h2>
             <p className="section-subtitle">
               Unclean water is not just unsafe to drink — it can also affect
