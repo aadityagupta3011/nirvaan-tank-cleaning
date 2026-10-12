@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MobileActionBar from "@/components/MobileActionBar";
 import JsonLd from "@/components/JsonLd";
-import { SITE, KEYWORDS, inCity } from "@/lib/site";
+import { SITE, DEVELOPER, KEYWORDS, inCity } from "@/lib/site";
 import { localBusinessSchema, websiteSchema } from "@/lib/seo";
 
 // Self-hosted at build time by next/font: no layout shift, no request to Google at runtime.
@@ -34,8 +34,8 @@ export const metadata = {
   description: SITE.description,
   applicationName: SITE.name,
   keywords: KEYWORDS,
-  authors: [{ name: SITE.name, url: SITE.url }],
-  creator: SITE.name,
+  authors: [{ name: DEVELOPER.name, url: DEVELOPER.linkedin }],
+  creator: DEVELOPER.name,
   publisher: SITE.name,
   category: "Home Services",
   alternates: { canonical: SITE.url },

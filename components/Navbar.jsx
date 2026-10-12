@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowRight, Mail, Menu, Phone, X } from "lucide-react";
-import { SITE } from "@/lib/site";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SITE, DEVELOPER } from "@/lib/site";
 import SiteImage from "@/components/SiteImage";
 
 const navItems = [
@@ -30,7 +31,21 @@ const Navbar = () => {
       {/* Utility bar */}
       <div className="hidden bg-ink text-white/70 md:block">
         <div className="section-wrap flex h-9 items-center justify-between font-mono text-[11px] uppercase tracking-[0.14em]">
-          <p>Mechanised water tank cleaning · Homes · Societies · Commercial</p>
+          <p className="flex items-center gap-3">
+            <span>Website developed by {DEVELOPER.name}</span>
+            <a href={`tel:${DEVELOPER.phone}`} className="transition hover:text-white">
+              {DEVELOPER.phoneDisplay}
+            </a>
+            <a
+              href={DEVELOPER.linkedin}
+              target="_blank"
+              rel="noopener"
+              aria-label={`${DEVELOPER.name} on LinkedIn`}
+              className="transition hover:text-white"
+            >
+              <FaLinkedinIn size={12} />
+            </a>
+          </p>
           <div className="flex items-center gap-6">
             <a href={`mailto:${SITE.email}`} className="flex items-center gap-2 transition hover:text-white">
               <Mail size={13} /> {SITE.email}
@@ -119,6 +134,13 @@ const Navbar = () => {
             <Link href="/contact" onClick={() => setOpen(false)} className="accent-button mt-3">
               Book a service <ArrowRight size={16} />
             </Link>
+            <p className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[11px] uppercase tracking-[0.14em] text-ink/50">
+              <span>Website developed by {DEVELOPER.name}</span>
+              <a href={`tel:${DEVELOPER.phone}`} className="text-ink/70">{DEVELOPER.phoneDisplay}</a>
+              <a href={DEVELOPER.linkedin} target="_blank" rel="noopener" aria-label={`${DEVELOPER.name} on LinkedIn`} className="text-ink/70">
+                <FaLinkedinIn size={12} />
+              </a>
+            </p>
           </div>
         </div>
       )}

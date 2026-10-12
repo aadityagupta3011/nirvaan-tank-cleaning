@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { SITE, SERVICES } from "@/lib/site";
+import { SITE, SERVICES, DEVELOPER } from "@/lib/site";
 import SiteImage from "@/components/SiteImage";
 
 const companyLinks = [
@@ -90,14 +90,20 @@ function Footer() {
           <p>
             &copy; {new Date().getFullYear()} {SITE.legalName}
           </p>
-          <a
-            href="https://www.linkedin.com/in/aaditya3011/"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1 transition hover:text-white"
-          >
-            Managed by Aaditya Gupta <ArrowUpRight size={12} />
-          </a>
+          <p className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span>Website developed by {DEVELOPER.name}</span>
+            <a href={`tel:${DEVELOPER.phone}`} className="transition hover:text-white">
+              {DEVELOPER.phoneDisplay}
+            </a>
+            <a
+              href={DEVELOPER.linkedin}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-1 transition hover:text-white"
+            >
+              <FaLinkedinIn size={11} /> LinkedIn <ArrowUpRight size={12} />
+            </a>
+          </p>
         </div>
       </div>
     </footer>

@@ -1,0 +1,8 @@
+/* TEAM */
+Website developer: Aaditya Gupta
+Phone: +91 90248 68980
+LinkedIn: https://www.linkedin.com/in/aaditya3011/
+
+/* SITE */
+Built with: Next.js, React, Tailwind CSS
+Hosting: Firebase Hosting
